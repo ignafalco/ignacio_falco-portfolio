@@ -1,0 +1,63 @@
+.bg-dark {
+    background-color: map-get($map: $paleta, $key:"uno");
+}
+
+.bg-darkblue {
+    background-color: map-get($map: $paleta, $key:"dos");
+}
+
+.bg-blue {
+    background-color: map-get($map: $paleta, $key:"tres");
+}
+
+.bg-lightblue {
+    background-color: map-get($map: $paleta, $key:"cuatro");
+}
+
+.bg-grey {
+    background-color: map-get($map: $paleta, $key:"cinco");
+}
+
+.bg-black {
+    background-color: map-get($map: $paleta, $key:"siete" );
+}
+
+.bg-white {
+    background-color: map-get($map: $paleta, $key:"ocho" );
+}
+
+.text-dark {
+    color: map-get($map: $paleta, $key:"uno");
+}
+
+.text-darkblue {
+    color: map-get($map: $paleta, $key:"dos");
+}
+
+.text-blue {
+    color: map-get($map: $paleta, $key:"tres");
+}
+
+.text-lightblue {
+    color: map-get($map: $paleta, $key:"cuatro");
+}
+
+.text-grey {
+    color: map-get($map: $paleta, $key:"cinco");
+}
+
+.text-orange {
+    color: map-get($map: $paleta, $key:"seis");
+}
+
+.text-black {
+    color: map-get($map: $paleta, $key:"siete");
+}
+
+.text-white {
+    color: map-get($map: $paleta, $key:"ocho");
+}
+
+.text-lightgrey {
+    color: map-get($map: $paleta, $key:"nueve");
+}

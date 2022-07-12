@@ -1,0 +1,15 @@
+.botonera {
+    padding-bottom: 30px;
+        li{
+        list-style: none;
+        margin-left: 10px;
+        }
+            a{
+            text-decoration: none;
+            font-size: $textSm;
+            font-weight: $light;
+            &:hover{
+                color: map-get($map: $paleta, $key:"seis");
+            }
+            }
+}

@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif; }
+
+.bg-dark {
+  background-color: #0D1B2A; }
+
+.bg-darkblue {
+  background-color: #1B263B; }
+
+.bg-blue {
+  background-color: #415A77; }
+
+.bg-lightblue {
+  background-color: #778DA9; }
+
+.bg-grey {
+  background-color: #E0E1DD; }
+
+.bg-black {
+  background-color: #0F0E0E; }
+
+.bg-white {
+  background-color: #F5F0F0; }
+
+.text-dark {
+  color: #0D1B2A; }
+
+.text-darkblue {
+  color: #1B263B; }
+
+.text-blue {
+  color: #415A77; }
+
+.text-lightblue {
+  color: #778DA9; }
+
+.text-grey {
+  color: #E0E1DD; }
+
+.text-orange {
+  color: #F5C67E; }
+
+.text-black {
+  color: #0F0E0E; }
+
+.text-white {
+  color: #F5F0F0; }
+
+.text-lightgrey {
+  color: #787878; }
+
+.botonera {
+  padding-bottom: 30px; }
+  .botonera li {
+    list-style: none;
+    margin-left: 10px; }
+  .botonera a {
+    text-decoration: none;
+    font-size: 0.8em;
+    font-weight: 300; }
+    .botonera a:hover {
+      color: #F5C67E; }
+
+.footer img {
+  margin-left: 8px; }
+
+.footer p {
+  font-size: 0.8em; }
+
+.footer a {
+  text-decoration: none; }
+
+.header__index {
+  height: 40em; }
+  .header__index img {
+    border: solid 2px #F5F0F0;
+    border-radius: 4px; }
+  .header__index h1 {
+    font-size: 0.8em; }
+  .header__index h5 {
+    font-size: 2em;
+    font-weight: 700; }
+  .header__index span {
+    font-weight: 300; }
+  .header__index p {
+    font-size: 0.8em;
+    font-weight: 300; }
+  .header__index button {
+    border: solid 1px #f5c67e;
+    padding: 10px 40px;
+    border-radius: 4px;
+    font-size: 0.8em; }
+
+.main__index h5 {
+  font-size: 1em; }
+
+.main__index p {
+  font-size: 2em; }
+
+hr {
+  width: 140px;
+  border-top: 1.4px solid #f5c67e;
+  margin-left: 6px;
+  padding-bottom: 7px; }
+
+.section1__index h5 {
+  font-size: 1em; }
+
+.section1__index p {
+  font-size: 2em; }
+
+.suscripcion__index h5 {
+  font-size: 2em; }
+
+.suscripcion__index p {
+  font-size: 0.8em; }
+
+.suscripcion__index input {
+  width: 28em;
+  border-radius: 4px;
+  border: none;
+  padding: 4px 8px;
+  font-size: 0.8em;
+  height: 28px; }

@@ -1,0 +1,78 @@
+//imports
+@import "_vars";
+@import "_fonts";
+@import "commons";
+@import "_color";
+@import "_nav";
+@import "footer";
+
+.header__index {
+    height: 40em;
+    img {
+        border: solid 2px #F5F0F0;
+        border-radius: 4px;
+    }
+    h1 {
+        font-size: $textSm;
+    }
+    h5 {
+        font-size: $textLg;
+        font-weight: $bold;
+    }
+        span { 
+            font-weight: $light;
+        }
+    p {
+        font-size: $textSm;
+        font-weight: $light;
+    }    
+
+    button {
+        border: solid 1px #f5c67e;
+        padding: 10px 40px;
+        border-radius: 4px;
+        font-size: $textSm
+        }
+}
+
+.main__index {
+    h5{
+        font-size: $textMd;
+    }
+    p {
+        font-size: $textLg;
+    }
+}
+
+hr {
+    width: 140px;
+    border-top: 1.4px solid #f5c67e;
+    margin-left: 6px;
+    padding-bottom: 7px;
+}
+
+.section1__index {
+    h5{
+        font-size: $textMd;
+    }
+    p {
+        font-size: $textLg;
+    }
+}
+
+.suscripcion__index {
+    h5{
+        font-size: $textLg;
+    }
+    p{
+        font-size: $textSm;
+    }
+    input{
+        width: 28em;
+        border-radius: 4px;
+        border: none;
+        padding: 4px 8px;
+        font-size: $textSm;
+        height: 28px;
+    }
+}
