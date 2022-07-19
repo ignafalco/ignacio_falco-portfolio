@@ -5,17 +5,26 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- metas seo -->
+
+    <meta name="description" content="Ignacio Falco | Diseñador UX/UI freelance en Córdoba. Especialista en diseño centrado en el usuario. Diseño web y app.">
+    <meta name="keywords" content="diseño ux, diseño ui, marketing, experiencia de usuario, diseño centrado en el usuario">
+    <meta name="author" content="Ignacio Falco">
+    <meta name="copyright" content="Ignacio Falco">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <!-- mi css -->
     <link rel="stylesheet" href="./css/style.css">
-    <title>Portfolio personal</title>
+    <title>Portfolio | Ignacio Falco - UX / UI</title>
   </head>
-  <body>
+  <body class="bg-dark">
     <!-- Comienza navbar -->
-        <nav class="bg-dark botonera navbar navbar-expand-lg">
+        <nav class="botonera navbar navbar-expand-lg">
             <div class="container d-flex justify-content-between">
             <a class="navbar-brand" href="#">
-                <img src="./img/logoNav.svg" alt="logo personal">
+                <img src="./img/logoNav.svg" alt="mi logo personal">
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,21 +53,24 @@
     <!-- Comienza header -->
         
         <header class="header__index pt-5 bg-dark">
-            <section class="ps-4 pb-5 container">
-                <div class="row">        
-                    <div class="me-5 col-lg-4 div1__index">
-                        <img src="./img/fotoPersonal.svg" alt="foto personal">
+            <section class="container">      
+                    <div class="pb-lg-5 align-items-center pt-5">
+                        <label class="mb-5 text-lightgrey d-flex justify-content-center align align-items-center">Hola, soy Ignacio</label>
+                        <div class="row">
+                            <div class="col-lg-12 mb-lg-2 d-flex justify-content-center">
+                                <h1 class="w-75 text-white text-center">Soy un Diseñador UX/UI creando experiencias únicas</h1>
+                            </div>
+                        </div>
+                            <p class="mb-3 text-lightgrey d-flex justify-content-center align-items-center">Amo trabajar con una mirada del usuario como centro.</p>
+                        <div class="d-flex justify-content-center"> 
+                            <a href="./views/sobremi.html">
+                                <button class="btn__principal mt-lg-5 bg-dark text-orange">Conoceme</button>
+                            </a>
+                        </div>
                     </div>
-                    <div class="col-lg-7 ps-5">
-                        <h1 class="mb-5 ps-5 text-orange">Mi historia</h1>
-                        <h5 class="mb-4 ps-5 text-grey"><span>Hola</span> soy <span>Ignacio Falco.</span> Diseñador <span>UX/UI</span> y licenciado en <span>marketing</span></h5>
-                        <p class="mb-3 ps-5 text-grey">Amo trabajar bajo un pensamiento de diseño y con una mirada del usuario como centro de cada estrategia, pudiendo resolver desafios del mundo real a escala.</p>
-                        <p class="mb-5 ps-5 text-grey">Me gusta conectar los objetivos comerciales con la satisfacción y experiencia del usuario.</p>
-                        <a href="./views/sobremi.html">
-                            <button class="ms-5 bg-dark text-orange">Conoceme</button>
-                        </a>
+                    <div class="mt-lg-5 d-flex justify-content-center">
+                        <hr>
                     </div>
-                </div>
             </section>
         </header>
 
@@ -66,60 +78,46 @@
 
 
     <!-- Comienza main -->
-        <main class="main__index bg-darkblue">
-            <div class="pt-5 pb-5">
-                <div class="bg-darkblue d-flex justify-content-center align-items-center">
-                    <h5 class="ps-5 text-orange">Destacados</h5>
-                    <hr>
+        <main class="main__index container">
+            <section>
+                <img class="w-100" src="./img/1__index.webp" alt="rediseño ux/ui de la aplicación de prime video">                             
+                <div class="row mt-4">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 mt-3">
+                        <h5 class="text-orange">Rediseño de app - UX/UI</h5>
+                    </div>
+                    <div class="col-xl-9 col-lg-8 col-md-7 col-sm-12 ms-md-3">
+                        <p class="text-white mt-lg-1">Prime video</p>
+                        <span class="text-lightgrey">Rediseñando la experiencia con el objetivo de mejorar la usabilidad y navegabilidad de la aplicación Prime Video</span>
+                        <a target="_blank" href="https://www.behance.net/gallery/144791141/Rediseno-UXUI-Prime-Video">
+                            <button class="btn__secundario mt-lg-3 bg-dark text-orange">Ver caso de estudio</button>
+                        </a>
+                    </div>
                 </div>
-                <div class="d-flex justify-content-center align-items-center">
-                    <p class="pe-4 text-grey">Conoce mi portfolio</p>
+            </section>
+            <hr>
+            <section>
+                <img class="w-100" src="./img/2__index.webp" alt="diseño ux/ui aplicacion empire">                             
+                <div class="row mt-4">
+                    <div class="col-xl-2 col-lg-3 col-md-4 col-sm-12 mt-3">
+                        <h5 class="text-orange">Diseño de app - UX/UI</h5>
+                    </div>
+                    <div class="col-xl-9 col-lg-8 col-md-7 col-sm-12 ms-md-3">
+                        <p class="text-white mt-lg-1">Empire</p>
+                        <span class="text-lightgrey">Con el diseño de Empire nace una nueva experiencia enfocada en el entrenamiento y la salud de las personas</span>
+                        <a target="_blank" href="https://www.behance.net/gallery/146973767/Diseno-UXUI-Empire">
+                            <button class="btn__secundario mt-lg-3 bg-dark text-orange">Ver caso de estudio</button>
+                        </a>
+                    </div>
                 </div>
-            </div>
-            <article class="pb-5 pt-5 article__index d-flex justify-content-center align-items-center">
-                <div class="container row">                 
-                    <img class="col-lg-4" src="./img/Rectangle 1.svg" alt="diseño ux/ui prime video">                 
-                    <img class="col-lg-4" src="./img/Rectangle 3.svg" alt="rediseño ux empire">                 
-                    <img class="col-lg-4" src="./img/Rectangle 5.svg" alt="diseño pagina web tienda de celulares">               
-                </div>
-            </article>
+            </section>
         </main>
     <!-- Termina main -->
 
     <!-- Comienza seccion -->
 
-        <section class="section1__index bg-dark pb-5">
-            <div class="pt-5 pb-5">
-                <div class="d-flex justify-content-center align-items-center">
-                    <h5 class="ps-5 text-orange">Blog</h5>
-                    <hr>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                    <p class="pe-5 me-4 text-grey">Las ultimas noticias</p>
-                </div>
-            </div>
-            <article class="pb-5 pt-4 article2__index d-flex justify-content-center align-items-center">
-                <div class="container row">                 
-                    <img class="col-lg-4" src="./img/blog 1.svg" alt="como ser un buen ux">                 
-                    <img class="col-lg-4" src="./img/blog 2.svg" alt="como hacer wireframes">                 
-                    <img class="col-lg-4" src="./img/blog 3.svg" alt="aprende a programar">               
-                </div>
-            </article>
-            <div class="suscripcion__index mt-5">
-                <div class="d-flex justify-content-center align-items-center">
-                    <h5 class="text-white">Suscribite</h5>
-                </div>
-                <div>
-                    <p class="text-white d-flex justify-content-center align-items-center">Recibirás las últimas actualizaciones</p>
-                </div>
-                <div class="d-flex justify-content-center align-items-center">
-                    <input type="text" name="" id="" placeholder="example@mail.com">
-                </div>
-            </div>
-        </section>
 
-        <footer class="footer bg-darkblue">
-            <div class="pt-3 container d-flex justify-content-between">
+        <footer class="footer bg-dark">
+            <div class="mt-lg-5 pt-lg-5 container d-flex justify-content-between">
                 <div>
                     <p class="text-lightgrey">2022 Córdoba, Argentina. Todos los derechos reservados</p>
                 </div>

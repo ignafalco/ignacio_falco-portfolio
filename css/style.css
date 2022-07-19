@@ -4,6 +4,9 @@
   padding: 0;
   font-family: "Poppins", sans-serif; }
 
+a {
+  text-decoration: none; }
+
 .bg-dark {
   background-color: #0D1B2A; }
 
@@ -19,11 +22,17 @@
 .bg-grey {
   background-color: #E0E1DD; }
 
+.bg-orange {
+  background-color: #F5C67E; }
+
 .bg-black {
   background-color: #0F0E0E; }
 
 .bg-white {
   background-color: #F5F0F0; }
+
+.bg-lightgrey {
+  background-color: #787878; }
 
 .text-dark {
   color: #0D1B2A; }
@@ -52,8 +61,11 @@
 .text-lightgrey {
   color: #787878; }
 
+.overlay {
+  background-color: rgba(228, 228, 228, 0.8); }
+
 .botonera {
-  padding-bottom: 30px; }
+  padding-top: 2em; }
   .botonera li {
     list-style: none;
     margin-left: 10px; }
@@ -74,54 +86,119 @@
   text-decoration: none; }
 
 .header__index {
-  height: 40em; }
-  .header__index img {
-    border: solid 2px #F5F0F0;
-    border-radius: 4px; }
-  .header__index h1 {
-    font-size: 0.8em; }
-  .header__index h5 {
-    font-size: 2em;
-    font-weight: 700; }
-  .header__index span {
-    font-weight: 300; }
-  .header__index p {
+  height: auto; }
+  .header__index label {
     font-size: 0.8em;
-    font-weight: 300; }
-  .header__index button {
-    border: solid 1px #f5c67e;
-    padding: 10px 40px;
-    border-radius: 4px;
-    font-size: 0.8em; }
+    font-weight: 400; }
+  .header__index h1 {
+    font-size: 3em;
+    font-weight: 400; }
+  .header__index p {
+    font-size: 1em;
+    font-weight: 600; }
+  .header__index hr {
+    border-left: solid 1px #787878;
+    width: 0%;
+    height: 6em; }
 
-.main__index h5 {
-  font-size: 1em; }
-
-.main__index p {
-  font-size: 2em; }
-
-hr {
-  width: 140px;
-  border-top: 1.4px solid #f5c67e;
-  margin-left: 6px;
-  padding-bottom: 7px; }
-
-.section1__index h5 {
-  font-size: 1em; }
-
-.section1__index p {
-  font-size: 2em; }
-
-.suscripcion__index h5 {
-  font-size: 2em; }
-
-.suscripcion__index p {
-  font-size: 0.8em; }
-
-.suscripcion__index input {
-  width: 28em;
+.btn__principal, .btn__secundario {
+  border: solid 1px #f5c67e;
+  padding: 10px 40px;
   border-radius: 4px;
-  border: none;
-  padding: 4px 8px;
+  font-size: 0.8em; }
+  .btn__principal:hover, .btn__secundario:hover {
+    transform: scale(1.1); }
+
+.main__index section {
+  height: auto;
+  width: auto;
+  margin-bottom: 5em; }
+  .main__index section img {
+    border-radius: .1em; }
+  .main__index section div h5 {
+    font-size: 0.8em;
+    font-weight: 400; }
+  .main__index section div p {
+    font-size: 2em;
+    font-weight: 600;
+    margin-bottom: 0; }
+  .main__index section div span {
+    font-size: 0.8em;
+    font-weight: 700; }
+
+.main__index hr {
+  width: 100%;
+  border-top: solid 1px #fff;
+  margin-top: 10em;
+  margin-bottom: 5em; }
+
+.header__trabajos {
+  margin-top: 5em; }
+  .header__trabajos div {
+    height: auto; }
+    .header__trabajos div h3 {
+      font-size: 0.8em;
+      font-weight: 400; }
+
+.main__trabajos {
+  margin-top: 5em; }
+  .main__trabajos section div {
+    height: 24em;
+    width: 18em; }
+    .main__trabajos section div img {
+      height: 100%;
+      width: 100%;
+      border-radius: 4px; }
+
+.main__contacto article {
+  height: auto; }
+
+.main__contacto section input {
+  border: solid 1px white;
+  padding: .3em; }
+
+.main__contacto section ::placeholder {
+  color: white;
   font-size: 0.8em;
-  height: 28px; }
+  font-weight: 300; }
+
+.main__sobremi {
+  margin-top: 8em;
+  width: 59.8%; }
+  .main__sobremi h1 {
+    font-size: 2em;
+    font-weight: 600;
+    line-height: 1.3em; }
+  .main__sobremi p {
+    font-size: 0.8em;
+    font-weight: 600;
+    line-height: 2em; }
+
+.btn__secundario {
+  border: none;
+  font-size: 1em;
+  padding: 0; }
+
+.main__blog h5 {
+  font-size: 2em;
+  font-weight: 700; }
+
+.main__blog p {
+  font-size: 1em;
+  font-weight: 300; }
+
+.main__blog span {
+  font-size: 0.8em;
+  font-weight: 700; }
+
+.section__blog h5 {
+  font-size: 1em;
+  font-weight: 600; }
+
+.section__blog p {
+  font-size: 0.8em;
+  font-weight: 300; }
+
+.section__blog span {
+  font-size: 0.8em;
+  font-weight: 700; }

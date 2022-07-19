@@ -18,12 +18,20 @@
     background-color: map-get($map: $paleta, $key:"cinco");
 }
 
+.bg-orange {
+    background-color: map-get($map: $paleta, $key:"seis" );
+}
+
 .bg-black {
     background-color: map-get($map: $paleta, $key:"siete" );
 }
 
 .bg-white {
     background-color: map-get($map: $paleta, $key:"ocho" );
+}
+
+.bg-lightgrey {
+    background-color: map-get($map: $paleta, $key:"nueve" );
 }
 
 .text-dark {
@@ -60,4 +68,8 @@
 
 .text-lightgrey {
     color: map-get($map: $paleta, $key:"nueve");
+}
+
+.overlay {
+    background-color:  rgba(228, 228, 228, 0.8);
 }
