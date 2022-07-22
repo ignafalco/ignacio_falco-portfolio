@@ -1,11 +1,11 @@
 //imports
 @import "_vars";
 @import "_fonts";
-@import "commons";
+@import "_commons";
 @import "_mixin";
 @import "_color";
 @import "_nav";
-@import "footer";
+@import "_footer";
 
 .header__index {
     height: auto;
@@ -26,44 +26,91 @@
 }
 
 .btn__principal {
-    border: solid 1px #f5c67e;
-    padding: 10px 40px;
-    border-radius: 4px;
-    font-size: $textSm;
-    &:hover{ 
-        transform: scale(1.1);
-    }
+    cursor:pointer;
+	position:relative;
+	padding:5px 10px;
+	background:white;
+	@include texto($textMd, $semibold);
+	transition:all 1s;
+    border: none;
+	&:after,&:before{
+		content:" ";
+		width:10px;
+		height:10px;
+		position:absolute;
+		border :0px solid #fff;
+		transition:all 1s;
+		}
+	&:after{
+		top:0;
+		left:0;
+		border-top:2px solid #f5c67e;
+		border-left:2px solid #f5c67e;
+	}
+	&:before{
+		bottom:0;
+		right:0;
+		border-bottom:2px solid #f5c67e;
+		border-right:2px solid #f5c67e;
+	}
+	&:hover{
+		border-top-right-radius:0px;
+	border-bottom-left-radius:0px;
+		&:before,&:after{
+			
+			width:100%;
+			height:100%;
+		}
+	}
 }
 
-
-.main__index {
-    section{
-        height: auto;
+.main__index{
+    article{
         width: auto;
-        margin-bottom: 5em;
+        height: auto;
+        h2{
+            @include texto($textMd, $semibold);
+        }
+    }
+    div{
+        position: relative;
+        height: 80%;
+        border-radius: 4px;
+        width: 80%;
         img{
-            border-radius: .1em;
+            width: 100%;
+            height: 100%;
+            border-radius: 4px;
         }
         div{
-            h5{
-                @include texto($textSm, $regular)
-            }
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgba(223, 223, 223, 0.9);
             p{
-                @include texto($textLg, $semibold);
-                margin-bottom: 0;
+                @include texto($textLg, $bold);
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                text-align: center;  
             }
-            span{
-                @include texto($textSm, $bold)
-            }
-        } 
+        }
     }
-    hr{
-        width: 100%;
-        border-top: solid 1px #fff;
-        margin-top: 10em;     
-        margin-bottom: 5em;    
-    }
-}
+}       
+
+.contenedor:hover .overlay {
+    opacity: 1;
+  }
+
 
 
 // Comienza trabajos
@@ -78,20 +125,22 @@
     }
 }
 
-.main__trabajos { 
-    margin-top: 5em;      
-    section {
-        div{
-            height: 24em;
-            width: 18em;
-            img{
-                height: 100%;
-                width: 100%;
-                border-radius: 4px;
-            }
+.main__trabajos {
+    height: auto;
+    h3{
+        @include texto($textMd, $regular)
+    }
+    p{
+        @include texto($textSm, $regular);
+    }
+    }
+    img{
+        border-radius: 3px;
+        &:hover{
+            transform: scale(1.02);
         }
     }
-}
+
 
 // Termina trabajos
 
@@ -115,7 +164,7 @@
     }
 }
 
-// Termina trabajos
+// Termina contacto
 
 
 // Comienzo sobre mi
@@ -134,11 +183,48 @@
    
 }
 .btn__secundario {
-    @extend .btn__principal;
+    cursor:pointer;
+	position:relative;
+	padding:5px 10px;
+	background:white;
+	@include texto($textSm, $semibold);
+	transition:all 1s;
     border: none;
-    font-size: $textMd;
-    padding: 0;
+	&:after,&:before{
+		content:" ";
+		width:10px;
+		height:10px;
+		position:absolute;
+		border :0px solid #fff;
+		transition:all 1s;
+		}
+	&:after{
+		top:0;
+		left:0;
+		border-top:2px solid #f5c67e;
+		border-left:2px solid #f5c67e;
+	}
+	&:before{
+		bottom:0;
+		right:0;
+		border-bottom:2px solid #f5c67e;
+		border-right:2px solid #f5c67e;
+	}
+	&:hover{
+		border-top-right-radius:0px;
+	border-bottom-left-radius:0px;
+		// background:rgba(0,0,0,.5);
+		// color:white;
+		&:before,&:after{
+			
+			width:100%;
+			height:100%;
+			// border-color:white;
+		}
+	}
 }
+
+
 // Termina sobre mi
 
 
@@ -156,16 +242,57 @@
     }
 }
 .section__blog{
+    img{
+        transition: transform .2s;
+        &:hover{
+            border: solid 3px #f5c67e;
+        }
+    }
     h5{
-        @include texto($textMd, $semibold);
+         @include texto($textMd, $bold);
     }
     p{
-        @include texto($textSm, $light);
+        @include texto($textSm, $regular);
     }
     span{
         @include texto($textSm, $bold);
     }
+    label{
+        @include texto($textSm, $light);
+    }
 }
 
+.article__blog {
+    div{
+        height: 10em;
+        div{
+            width: auto;
+            height: auto;
+            h3{
+                @include texto($textMd, $bold);
+            }
+            hr{
+                width: 10%;
+                height: 2px;
+                border-top: 2px solid #fff;
+            }
+        }
+        input{
+            width: 20em;
+            border: solid 0.04px #787878;
+        }
+        ::placeholder{
+            color: #000;
+            @include texto($textSm, $light)
+        }
+    }
+}
+
+.submit__blog{
+    @include texto($textMd, $regular);
+    &:hover{
+        background-color: #f3ac41;
+    }
+}
 
 // Termina blog
