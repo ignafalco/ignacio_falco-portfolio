@@ -1,22 +1,72 @@
 .botonera {
     padding-top: 2em;
-    ul{
-        text-transform: uppercase;
-        text-align: center;
-    }
-        li{
-        list-style: none;
-        margin-left: 10px;        
+    div{
+        button{
+            border: 0;
+            &:focus, &:active{
+                outline: none;
+                box-shadow: none;
+                border: 0;
+            }
+            span{
+                width: 24px;
+                height: 1px;
+                background-color: rgb(247, 16, 16);
+                display: block;
+                transition: all 0.2s; 
+            }
         }
-            a{
-            text-decoration: none;
-            @include texto($textSm, $light);
-            &:hover{
-                color: map-get($map: $paleta, $key:"seis");
+        div{
+            ul{
+                text-transform: uppercase;
+                li{
+                    list-style: none; 
+                    a{
+                        text-decoration: none;
+                        @include texto($textSm, $light);
+                        &:hover{
+                            color: map-get($map: $paleta, $key:"seis");
+                        }
+                    }       
+                }
             }
-            }
+        }
+    }               
 }
 
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");  
+.middle-bar{
+    margin: 5px auto;
 }
+
+.navbar-toggler .top-bar{
+    transform: rotate(45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler .middle-bar{
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.navbar-toggler .bottom-bar{
+    transform: rotate(-45deg);
+    transform-origin: 10% 10%;
+}
+
+.navbar-toggler.collapsed .top-bar{
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .middle-bar{
+    opacity: 1;
+    filter: alpha(opacity=100);
+}
+
+.navbar-toggler.collapsed .bottom-bar{
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .toggler-icon{
+    background-color: #f5f0f0;
+}
+

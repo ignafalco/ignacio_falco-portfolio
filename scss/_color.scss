@@ -34,6 +34,10 @@
     background-color: map-get($map: $paleta, $key:"nueve" );
 }
 
+.bg-darkblack {
+    background-color: map-get($map: $paleta, $key:"diez" );
+}
+
 .text-dark {
     color: map-get($map: $paleta, $key:"uno");
 }

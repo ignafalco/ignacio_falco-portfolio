@@ -19,28 +19,30 @@
     <link rel="stylesheet" href="../css/style.css">
     <title>Blog | Ignacio Falco - UX / UI</title>
   </head>
-  <body class="bg-dark">
+  <body class="bg-black">
     <!-- Comienza navbar -->
-        <nav class="bg-dark botonera navbar navbar-expand-lg">
-            <div class="container d-flex justify-content-between">
+        <nav class="bg-black botonera navbar navbar-expand-lg sticky-top">
+            <div class="container">
             <a class="navbar-brand" href="../index.html">
                 <img src="../img/logoNav.svg" alt="logo personal">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button class="collapsed navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggler-icon top-bar"></span>
+                <span class="toggler-icon middle-bar"></span>
+                <span class="toggler-icon bottom-bar"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
+                <li class="nav-item ms-auto">
                     <a class="text-grey nav-link" aria-current="page" href="../views/trabajos.html">Trabajos</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ms-auto">
                     <a class="text-grey nav-link" aria-current="page" href="../views/sobremi.html">Sobre mi</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ms-auto">
                     <a class="text-grey nav-link" aria-current="page" href="../views/contacto.html">Contacto</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ms-auto">
                     <a class="text-grey nav-link" aria-current="page" href="#">Blog</a>
                 </li>
                 </ul>
@@ -51,7 +53,7 @@
 
         <!-- Comienza main -->
         <main class="main__blog">
-            <div class="card bg-dark mb-3 mt-5 container">
+            <div class="card bg-black mb-3 mt-5 container">
                 <img src="../img/blog__1.webp" class="w-100 card-img-top" alt="Tips para hacer buenos wireframes">
                 <div class="bg-white card-body">
                 <h5 class="text-darkblue card-title">5 tips para perfeccionarte haciendo wireframes</h5>
@@ -164,7 +166,7 @@
         <!-- Termina section -->
 
         <article class="article__blog my-5 container">
-            <div class="ps-3 d-flex flex-column bg-dark align-items-center justify-content-center">
+            <div class="ps-3 d-flex flex-column bg-black align-items-center justify-content-center">
                 <div class="d-flex flex-column align-items-center">
                     <h3 class="text-white">Suscríbite al newsletter</h3> <hr>
                 </div>
@@ -176,29 +178,43 @@
         
          <!-- Comienza footer -->
 
-        <footer class="footer bg-dark">
-            <div class="pt-3 container d-flex justify-content-between">
-                <div>
-                    <p class="text-lightgrey">2022 Córdoba, Argentina. Todos los derechos reservados</p>
-                </div>
-                <div>
-                    <a href="https://github.com/ignafalco" target="_blank">
-                        <img src="../img/GitHub.svg" alt="logo github">
-                    </a>
-                    <a href="https://www.instagram.com/ignafalco/?hl=es-la" target="_blank">
-                        <img src="../img/Instagram.svg" alt="logo instagram">
-                    </a>
-                    <a href="https://www.behance.net/ignaciofalco" target="_blank">
-                        <img src="../img/Behance.svg" alt="logo behance">
-                    </a>
-                    <a href="https://www.linkedin.com/in/ignacio-falco-12a3131a1/" target="_blank">
-                        <img src="../img/LinkedIn.svg" alt="logo linkedin">
-                    </a>
-                    <a href="https://twitter.com/ignafalco" target="_blank">
-                        <img src="../img/Twitter.svg" alt="logo twitter">
-                    </a>
-                </div>
-            </div> 
+         <footer class="footer bg-black container-fluid mb-3">
+            <div class="d-flex justify-content-center">
+                <a href="../index.html">
+                    <li class="me-4 text-lightgrey">Inicio</li>
+                </a>
+                <a href="./trabajos.html">
+                    <li class="me-4 text-lightgrey">Trabajos</li>
+                </a>
+                <a href="./sobremi.html">
+                    <li class="me-4 text-lightgrey">Sobre mi</li>
+                </a>
+                <a href="./contacto.html">
+                    <li class="me-4 text-lightgrey">Contacto</li>
+                </a>
+                <a href="#">
+                    <li class="text-lightgrey">Blog</li>
+                </a>
+            </div>
+            <hr>
+            <div class="d-flex justify-content-center mt-3">
+                <a href="https://github.com/ignafalco" target="_blank">
+                    <img src="../img/GitHub.svg" alt="logo github" class="me-4">
+                </a>
+                <a href="https://www.instagram.com/ignafalco/?hl=es-la" target="_blank">
+                    <img src="../img/Instagram.svg" alt="logo instagram" class="me-4">
+                </a>
+                <a href="https://www.behance.net/ignaciofalco" target="_blank">
+                    <img src="../img/Behance.svg" alt="logo behance" class="me-4">
+                </a>
+                <a href="https://www.linkedin.com/in/ignacio-falco-12a3131a1/" target="_blank">
+                    <img src="../img/LinkedIn.svg" alt="logo linkedin" class="me-4">
+                </a>
+                <a href="https://twitter.com/ignafalco" target="_blank">
+                    <img src="../img/Twitter.svg" alt="logo twitter">
+                </a>
+            </div>
+        </div> 
         </footer>
         
             <!-- Termina footer -->

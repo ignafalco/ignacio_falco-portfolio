@@ -17,30 +17,33 @@
     
     <!-- mi css -->
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <title>Contacto | Ignacio Falco - UX / UI</title>
   </head>
-  <body class="bg-dark">
+  <body class="bg-black">
     <!-- Comienza navbar -->
-        <nav class="bg-dark botonera navbar navbar-expand-lg">
-            <div class="container d-flex justify-content-between">
-            <a class="navbar-brand" href="../index.html">
-                <img src="../img/logoNav.svg" alt="logo personal">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <nav class="bg-black botonera navbar navbar-expand-lg sticky-top">
+        <div class="container">
+        <a class="navbar-brand" href="../index.html">
+            <img src="../img/logoNav.svg" alt="logo personal">
+        </a>
+        <button class="collapsed navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="toggler-icon top-bar"></span>
+            <span class="toggler-icon middle-bar"></span>
+            <span class="toggler-icon bottom-bar"></span>
+        </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
+                <li class="nav-item ms-auto">
                     <a class="text-grey nav-link" aria-current="page" href="../views/trabajos.html">Trabajos</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ms-auto">
                     <a class="text-grey nav-link" aria-current="page" href="../views/sobremi.html">Sobre mi</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ms-auto">
                     <a class="text-grey nav-link" aria-current="page" href="#">Contacto</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item ms-auto">
                     <a class="text-grey nav-link" aria-current="page" href="../views/blog.html">Blog</a>
                 </li>
                 </ul>
@@ -49,47 +52,82 @@
         </nav>
         <!-- Termina nav -->
 
-        <main class="main__contacto container">
-            <article class="row">
-                <div class="col-lg-6">
-                    <h1 class="text-white">PONGAMONOS EN CONTACTO</h1>
-                    <p class="text-white">ignafalco@hotmail.com</p>
-                    <p class="text-white">+549-03543-15611831</p>
-                </div>
-                <section class="col-lg-6 bg-dark d-flex flex-column justify-content-center">
-                    <input class="mb-5 bg-dark" placeholder="Tu nombre" type="text">
-                    <input class="mb-5 bg-dark" placeholder="Tu email" type="email">
-                    <input class="mb-5 bg-dark" placeholder="Tu numero de celular" type="tel">
-                    <input class="mb-5 bg-dark" placeholder="Mensaje" type="text">
+        <header>
+            <section class="section__contacto">
+                <video src="../img/video.mp4" autoplay="true" muted="true" loop="true"></video>
+                <p class="text-white">La primera condición de un diseñador es saber escuchar</p>
+            </section>
+        </header>
+
+
+
+        <main class="main__contacto container-fluid row mb-5">
+            <div class="d-flex justify-content-center">
+            <form>
+                <h1 class="text-white">Contactame</h1>
+                <p class="text-white">Me encantaría conversar contigo</p>
+                <section>
+                    <div>
+                        <input type="text" id="name" placeholder=" " required>
+                        <label for="name">Nombre</label>
+                    </div>
+                    <div>
+                        <input type="email" id="mail" placeholder=" " required>
+                        <label for="mail">Email</label>
+                    </div>
+                    <div>
+                        <input type="tel" id="phone" placeholder=" ">
+                        <label for="phone">Teléfono</label>
+                    </div>
+                    <div>
+                        <input type="text" id="message" placeholder=" " required>
+                        <label class="label__contacto" for="message">Escribe tu mensaje</label>
+                    </div>
+                    <input class="submit__contacto" type="submit" value="Enviar">
                 </section>
-            </article>
+            </form>
+            </div>
         </main>
 
                 <!-- Comienza footer -->
 
-                <footer class="footer bg-dark">
-                    <div class="pt-3 container d-flex justify-content-between">
-                        <div>
-                            <p class="text-lightgrey">2022 Córdoba, Argentina. Todos los derechos reservados</p>
-                        </div>
-                        <div>
-                            <a href="https://github.com/ignafalco" target="_blank">
-                                <img src="../img/GitHub.svg" alt="logo github">
-                            </a>
-                            <a href="https://www.instagram.com/ignafalco/?hl=es-la" target="_blank">
-                                <img src="../img/Instagram.svg" alt="logo instagram">
-                            </a>
-                            <a href="https://www.behance.net/ignaciofalco" target="_blank">
-                                <img src="../img/Behance.svg" alt="logo behance">
-                            </a>
-                            <a href="https://www.linkedin.com/in/ignacio-falco-12a3131a1/" target="_blank">
-                                <img src="../img/LinkedIn.svg" alt="logo linkedin">
-                            </a>
-                            <a href="https://twitter.com/ignafalco" target="_blank">
-                                <img src="../img/Twitter.svg" alt="logo twitter">
-                            </a>
-                        </div>
-                    </div> 
+                <footer class="footer bg-black container-fluid mb-3">
+                    <div class="d-flex justify-content-center">
+                        <a href="../index.html">
+                            <li class="me-4 text-lightgrey">Inicio</li>
+                        </a>
+                        <a href="./trabajos.html">
+                            <li class="me-4 text-lightgrey">Trabajos</li>
+                        </a>
+                        <a href="./sobremi.html">
+                            <li class="me-4 text-lightgrey">Sobre mi</li>
+                        </a>
+                        <a href="#">
+                            <li class="me-4 text-lightgrey">Contacto</li>
+                        </a>
+                        <a href="./blog.html">
+                            <li class="text-lightgrey">Blog</li>
+                        </a>
+                    </div>
+                    <hr>
+                    <div class="d-flex justify-content-center mt-3">
+                        <a href="https://github.com/ignafalco" target="_blank">
+                            <img src="../img/GitHub.svg" alt="logo github" class="me-4">
+                        </a>
+                        <a href="https://www.instagram.com/ignafalco/?hl=es-la" target="_blank">
+                            <img src="../img/Instagram.svg" alt="logo instagram" class="me-4">
+                        </a>
+                        <a href="https://www.behance.net/ignaciofalco" target="_blank">
+                            <img src="../img/Behance.svg" alt="logo behance" class="me-4">
+                        </a>
+                        <a href="https://www.linkedin.com/in/ignacio-falco-12a3131a1/" target="_blank">
+                            <img src="../img/LinkedIn.svg" alt="logo linkedin" class="me-4">
+                        </a>
+                        <a href="https://twitter.com/ignafalco" target="_blank">
+                            <img src="../img/Twitter.svg" alt="logo twitter">
+                        </a>
+                    </div>
+                </div> 
                 </footer>
         
             <!-- Termina footer -->

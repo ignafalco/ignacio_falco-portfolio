@@ -7,186 +7,70 @@
 @import "_nav";
 @import "_footer";
 
+.body__index{
+    height: 700px;
+    background-image: url(../img/img__hero.webp);
+    background-repeat: no-repeat;
+}
+
 .header__index {
-    height: auto;
-    label{
-        @include texto($textSm, $regular)
-    }
-    h1 {
-        @include texto($textXl, $regular)
-    }
-    p {
-        @include texto($textMd, $semibold)
-    }    
-    hr{
-        border-left: solid 1px #787878;
-        width: 0%;
-        height: 6em;
-    }
-}
-
-.btn__principal {
-    cursor:pointer;
-	position:relative;
-	padding:5px 10px;
-	background:white;
-	@include texto($textMd, $semibold);
-	transition:all 1s;
-    border: none;
-	&:after,&:before{
-		content:" ";
-		width:10px;
-		height:10px;
-		position:absolute;
-		border :0px solid #fff;
-		transition:all 1s;
-		}
-	&:after{
-		top:0;
-		left:0;
-		border-top:2px solid #f5c67e;
-		border-left:2px solid #f5c67e;
-	}
-	&:before{
-		bottom:0;
-		right:0;
-		border-bottom:2px solid #f5c67e;
-		border-right:2px solid #f5c67e;
-	}
-	&:hover{
-		border-top-right-radius:0px;
-	border-bottom-left-radius:0px;
-		&:before,&:after{
-			
-			width:100%;
-			height:100%;
-		}
-	}
-}
-
-.main__index{
-    article{
-        width: auto;
-        height: auto;
-        h2{
-            @include texto($textMd, $semibold);
-        }
-    }
-    div{
-        position: relative;
-        height: 80%;
-        border-radius: 4px;
-        width: 80%;
-        img{
-            width: 100%;
-            height: 100%;
-            border-radius: 4px;
-        }
+        height: 700px;
         div{
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 100%;
-            width: 100%;
-            opacity: 0;
-            transition: .5s ease;
-            background-color: rgba(223, 223, 223, 0.9);
+            h1{
+                @include texto($textXl, $semibold);
+            }
             p{
-                @include texto($textLg, $bold);
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                -webkit-transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                text-align: center;  
+                @include texto($textSm, $light);
             }
-        }
     }
-}       
+}     
 
-.contenedor:hover .overlay {
-    opacity: 1;
-  }
+.btn__1{
+    @include texto($textSm, $regular);
+    padding: 6px 20px;
+    background-color: #f3ac41;
+    border: none;
+    border-radius: 2px;
+    width: auto;
+    &:hover{
+        background-color: #f5c67e;
+    }
+}
 
-
-
-// Comienza trabajos
-
-.header__trabajos {
-    margin-top: 5em;
+.section__index{
     div{
-        height: auto;
-        h3{
-            @include texto($textSm, $regular)
+        height: 500px;
+        h2{
+            @include texto($textMd, $regular); 
         }
-    }
-}
-
-.main__trabajos {
-    height: auto;
-    h3{
-        @include texto($textMd, $regular)
-    }
-    p{
-        @include texto($textSm, $regular);
-    }
-    }
-    img{
-        border-radius: 3px;
-        &:hover{
-            transform: scale(1.02);
+        hr{
+            border: 1px solid #ee8f00;
+            width: 30px;
+            margin: 0px;
         }
-    }
-
-
-// Termina trabajos
-
-
-
-// Comienza contacto
-
-.main__contacto {
-    article{
-        height: auto;
-    }
-    section{
-        input{
-            border: solid 1px white;
-            padding: .3em;
-            }
-            ::placeholder{
-                color: white;
-                @include texto($textSm, $light)
+        p{
+            @include texto($textSm, $regular);   
         }
-    }
-}
+        ul{
+            margin-top: 40px;
+            padding: 0;
+                li{
+                @include texto($textMd, $regular); 
+                margin: 0 15px;
+                list-style: none;
+                &:hover{
+                    color: #f3ac41;
+                }
+                }
+            }   
+        }
+    }          
 
-// Termina contacto
 
-
-// Comienzo sobre mi
-
-.main__sobremi {
-    margin-top: 8em;
-    width: 59.8%;
-    h1{
-        @include texto($textLg, $semibold);
-        line-height: 1.3em;
-    }
-    p{
-        @include texto($textSm, $semibold);
-        line-height: 2em;
-    }
-   
-}
-.btn__secundario {
+.btn__2 {
     cursor:pointer;
 	position:relative;
 	padding:5px 10px;
-	background:white;
 	@include texto($textSm, $semibold);
 	transition:all 1s;
     border: none;
@@ -213,15 +97,208 @@
 	&:hover{
 		border-top-right-radius:0px;
 	border-bottom-left-radius:0px;
-		// background:rgba(0,0,0,.5);
-		// color:white;
 		&:before,&:after{
-			
 			width:100%;
 			height:100%;
-			// border-color:white;
 		}
 	}
+}
+
+.main__index{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    div{
+        h3{
+            @include texto($textMd, $regular) 
+        }
+        hr{
+            border: 1px solid #ee8f00;
+            width: 30px;
+            margin: 0px;
+        }
+    }
+    section{
+        div{
+            a{
+                img{
+                    &:hover{
+                        transform: scale(1.02);
+                    }
+                }
+            }
+            label{
+                @include texto($textMd, $regular)  
+            }
+            div{
+                span{
+                    @include texto($textSm, $regular)  
+                }
+            }
+        }
+    }
+    
+}
+
+
+
+// Comienza trabajos
+.body__trabajos{
+    height: 700px;
+    background-image: url(../img/img__hero.webp);
+    background-repeat: no-repeat;
+}
+
+
+.header__trabajos{
+    div{
+        p{
+            @include texto($textSm, $regular);    
+        }
+    }
+}
+
+
+.main__trabajos{
+    margin-top: 100px;
+    padding-bottom: 100px;
+    div{
+        max-width: 1300px;
+        margin: auto;
+        margin-top: 40px;      
+        flex-wrap: wrap;
+        div{
+            width: 218px;
+            height: 200px;
+            background: #fff;
+            margin: 1px;
+            cursor: pointer;
+            transition: all 300ms ease;
+            &:hover{
+                transform: scale(1.1);
+                box-shadow: 0px 0px 30px -15px rgba(0,0,0,0.5);
+                background: #f5c67e;
+                z-index: 1;
+            }
+            h2{
+                margin-top: 20px;
+                @include texto($textSm, $semibold); 
+                }
+        }
+    }
+}
+
+
+// Termina trabajos
+
+
+
+// Comienza contacto
+
+.section__contacto{
+    height: 400px;
+    overflow: hidden;
+    margin-top: 1.4em;
+    position: relative;
+    video{
+        width: 100%;
+    }
+    p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        @include texto($textMd, $semibold);
+    }
+}
+
+.main__contacto {
+    margin-top: 4em;
+    div{
+        form{
+            width: 100%;
+            max-width: 500px;
+            padding: 4.5em 3em;
+            border-radius: 5px;
+            text-align: center;
+            h1{
+                @include texto($textLg, $bold); 
+                margin-bottom: .5em;
+            }
+            p{
+                @include texto($textMd, $regular);  
+            }
+            section{
+                margin-top: 3em;
+                display: grid;
+                gap: 2.5em;
+                div{
+                    position: relative;
+                    input{
+                        width: 100%;
+                        color: #f5f0f0;
+                        background: none;
+                        @include texto($textSm, $regular);
+                        padding: .6em .3em;
+                        border: none;
+                        outline: none; 
+                        border-bottom: 1px solid #787878;
+                        &:focus + label,
+                        &:not(:placeholder-shown) + label{
+                            transform: translateY(-12px) scale(.7);
+                            transform-origin: left top;
+                            @include texto($textMd, $semibold);
+                            color: #f5c67e;
+                        }
+                    }
+                    label{
+                        color: #f5f0f0;
+                        cursor: pointer;
+                        position: absolute;
+                        top: 0;
+                        left: 5px;
+                        transform: translatey(10px);
+                        transition: transform .5s;
+                        @include texto($textSm, $regular);
+                    }           
+                }
+            }
+        }
+    }       
+}
+
+.submit__contacto{
+    background-color: #f3ac41;
+    border: none;
+    border-radius: .5em;
+    padding: .8em 0;
+    color: #f5f0f0;
+    @include texto($textSm, $regular); 
+    &:hover{
+        background-color: #f5c67e;
+        color: #000000;
+    }
+}
+// Termina contacto
+
+
+// Comienzo sobre mi
+
+
+.main__sobremi {
+    margin-top: 8em;
+    width: 59.8%;
+    h2{
+        @include texto($textSm, $semibold);
+    }
+    h1{
+        @include texto($textLg, $semibold);
+        line-height: 1.3em;
+    }
+    p{
+        @include texto($textSm, $regular);
+        line-height: 2em;
+    }
+   
 }
 
 
@@ -280,6 +357,7 @@
         input{
             width: 20em;
             border: solid 0.04px #787878;
+            outline: none;
         }
         ::placeholder{
             color: #000;

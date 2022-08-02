@@ -1,6 +1,15 @@
 .footer {
-    img{
-        margin-left: 8px;
+    padding-bottom: 10px;
+    hr{
+        border-top: .1em solid #787878;
+        width: 100%;
+    }
+    li{
+        list-style: none;
+        @include texto($textSm, $regular);
+        &:hover{
+            color: #f5c67e;
+        }
     }
     p{
         font-size: $textSm;
@@ -9,3 +18,4 @@
         text-decoration: none;
     }
 }
+
