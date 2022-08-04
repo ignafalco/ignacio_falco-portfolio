@@ -6,15 +6,10 @@
 @import "_color";
 @import "_nav";
 @import "_footer";
+@import "_responsive";
 
-.body__index{
-    height: 700px;
-    background-image: url(../img/img__hero.webp);
-    background-repeat: no-repeat;
-}
 
 .header__index {
-        height: 700px;
         div{
             h1{
                 @include texto($textXl, $semibold);
@@ -27,7 +22,7 @@
 
 .btn__1{
     @include texto($textSm, $regular);
-    padding: 6px 20px;
+    padding: 0.5em 1em;
     background-color: #f3ac41;
     border: none;
     border-radius: 2px;
@@ -38,8 +33,8 @@
 }
 
 .section__index{
+    width: 100vw;
     div{
-        height: 500px;
         h2{
             @include texto($textMd, $regular); 
         }
@@ -70,33 +65,33 @@
 .btn__2 {
     cursor:pointer;
 	position:relative;
-	padding:5px 10px;
-	@include texto($textSm, $semibold);
+    @include texto($textSm, $semibold);
+	padding:0.5em 1em;
 	transition:all 1s;
     border: none;
 	&:after,&:before{
 		content:" ";
-		width:10px;
-		height:10px;
+		width:1rem;
+		height:1rem;
 		position:absolute;
-		border :0px solid #fff;
+		border :0 solid #fff;
 		transition:all 1s;
 		}
 	&:after{
 		top:0;
 		left:0;
-		border-top:2px solid #f5c67e;
-		border-left:2px solid #f5c67e;
+		border-top:0.2rem solid #f5c67e;
+		border-left:0.2rem solid #f5c67e;
 	}
 	&:before{
 		bottom:0;
 		right:0;
-		border-bottom:2px solid #f5c67e;
-		border-right:2px solid #f5c67e;
+		border-bottom:0.2rem solid #f5c67e;
+		border-right:0.2rem solid #f5c67e;
 	}
 	&:hover{
-		border-top-right-radius:0px;
-	border-bottom-left-radius:0px;
+		border-top-right-radius:0;
+	    border-bottom-left-radius:0;
 		&:before,&:after{
 			width:100%;
 			height:100%;
@@ -105,16 +100,14 @@
 }
 
 .main__index{
-    margin-top: 100px;
-    margin-bottom: 100px;
     div{
         h3{
             @include texto($textMd, $regular) 
         }
         hr{
-            border: 1px solid #ee8f00;
-            width: 30px;
-            margin: 0px;
+            width: 3rem;
+            border: 0.1rem solid #ee8f00;
+            margin: 0;
         }
     }
     section{
@@ -381,8 +374,7 @@
     padding: 0;
     font-family: "montserrat",sans-serif;
     min-height: 100vh;
-    background-image: url(../img/hero__404.webp);
-    background-repeat: no-repeat;
+    // background-color: #ffffff;
     // background-image: radial-gradient( circle farthest-corner at -4% -12.9%,  rgba(74,98,110,1) 0.3%, rgba(30,33,48,1) 90.2% );
 }
 .main__404{
@@ -415,21 +407,19 @@
         }
     }
     h2{
-        @include texto($textMd, $regular);
+        @include texto($textLg, $regular);
     }
     p{
-        @include texto($textSm, $regular);  
+        @include texto($textMd, $regular);  
     }
     button{
-        background-color: transparent;
-        border: 1px solid #ee8f00;
+        background-color: #ee8f00;
         padding: 8px 12px;
-        @include texto($textSm, $semibold);
+        border: none;
+        @include texto($textSm, $regular);
         border-radius: 4px;
         &:hover{
-            background-color: #ee8f00;
-            color: #ffffff;
-            @include texto($textSm, $regular);
+            background-color: #f3ac41;
         }
     }
 }

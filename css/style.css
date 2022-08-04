@@ -2,6 +2,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-size: 62.5%;
   font-family: "Poppins", sans-serif; }
   * ::-webkit-scrollbar {
     width: 8px; }
@@ -94,7 +95,7 @@ a {
       list-style: none; }
       .botonera div div ul li a {
         text-decoration: none;
-        font-size: 0.8em;
+        font-size: 1.2rem;
         font-weight: 300; }
         .botonera div div ul li a:hover {
           color: #F5C67E; }
@@ -134,33 +135,84 @@ a {
     width: 100%; }
   .footer li {
     list-style: none;
-    font-size: 0.8em;
+    font-size: 1.2rem;
     font-weight: 400; }
     .footer li:hover {
       color: #f5c67e; }
   .footer p {
-    font-size: 0.8em; }
+    font-size: 1.2rem; }
   .footer a {
     text-decoration: none; }
 
-.body__index {
-  height: 700px;
-  background-image: url(../img/img__hero.webp);
-  background-repeat: no-repeat; }
+@media (max-width: 575.98px) {
+  html {
+    font-size: 80%; }
+  .body__index {
+    height: 100vh;
+    background-image: url(../img/hero__index-sm.webp);
+    background-repeat: no-repeat; }
+  .header__index {
+    height: 100%; }
+    .header__index div {
+      text-align: center; }
+      .header__index div p {
+        margin: 0;
+        padding: 0.5em 1em;
+        width: 100%; }
+  .section__index {
+    margin: 0;
+    padding: 0; }
+    .section__index div {
+      height: 40rem; }
+      .section__index div button {
+        background-color: #f5c67e;
+        color: #000000;
+        font-size: 1.2rem;
+        font-weight: 400; }
+  .main__index {
+    margin-top: 4rem;
+    margin-bottom: 5rem; }
+    .main__index div {
+      margin-bottom: 2.5rem; }
+    .main__index section div {
+      margin-top: 2rem; }
+      .main__index section div label {
+        font-size: 1.2rem;
+        font-weight: 400; }
+      .main__index section div div {
+        margin-top: 0; }
+        .main__index section div div span {
+          margin-right: 0.7rem; } }
 
-.header__index {
-  height: 700px; }
-  .header__index div h1 {
-    font-size: 3em;
-    font-weight: 600; }
-  .header__index div p {
-    font-size: 0.8em;
-    font-weight: 300; }
+@media (min-width: 1199.98px) {
+  .body__index {
+    height: 100vh;
+    background-image: url(../img/img__hero.webp);
+    background-repeat: no-repeat; }
+  .header__index {
+    height: 100vh; }
+    .header__index p {
+      width: 75%; }
+  .section__index div {
+    height: 50rem; }
+    .section__index div p {
+      width: 50%; }
+  .main__index {
+    margin-top: 10rem;
+    margin-bottom: 10rem; } }
+
+.header__index div h1 {
+  font-size: 4rem;
+  font-weight: 600; }
+
+.header__index div p {
+  font-size: 1.2rem;
+  font-weight: 300; }
 
 .btn__1 {
-  font-size: 0.8em;
+  font-size: 1.2rem;
   font-weight: 400;
-  padding: 6px 20px;
+  padding: 0.5em 1em;
   background-color: #f3ac41;
   border: none;
   border-radius: 2px;
@@ -168,23 +220,23 @@ a {
   .btn__1:hover {
     background-color: #f5c67e; }
 
-.section__index div {
-  height: 500px; }
+.section__index {
+  width: 100vw; }
   .section__index div h2 {
-    font-size: 1em;
+    font-size: 2rem;
     font-weight: 400; }
   .section__index div hr {
     border: 1px solid #ee8f00;
     width: 30px;
     margin: 0px; }
   .section__index div p {
-    font-size: 0.8em;
+    font-size: 1.2rem;
     font-weight: 400; }
   .section__index div ul {
     margin-top: 40px;
     padding: 0; }
     .section__index div ul li {
-      font-size: 1em;
+      font-size: 2rem;
       font-weight: 400;
       margin: 0 15px;
       list-style: none; }
@@ -194,53 +246,54 @@ a {
 .btn__2 {
   cursor: pointer;
   position: relative;
-  padding: 5px 10px;
-  font-size: 0.8em;
+  font-size: 1.2rem;
   font-weight: 600;
+  padding: 0.5em 1em;
   transition: all 1s;
   border: none; }
   .btn__2:after, .btn__2:before {
     content: " ";
-    width: 10px;
-    height: 10px;
+    width: 1rem;
+    height: 1rem;
     position: absolute;
-    border: 0px solid #fff;
+    border: 0 solid #fff;
     transition: all 1s; }
   .btn__2:after {
     top: 0;
     left: 0;
-    border-top: 2px solid #f5c67e;
-    border-left: 2px solid #f5c67e; }
+    border-top: 0.2rem solid #f5c67e;
+    border-left: 0.2rem solid #f5c67e; }
   .btn__2:before {
     bottom: 0;
     right: 0;
-    border-bottom: 2px solid #f5c67e;
-    border-right: 2px solid #f5c67e; }
+    border-bottom: 0.2rem solid #f5c67e;
+    border-right: 0.2rem solid #f5c67e; }
   .btn__2:hover {
-    border-top-right-radius: 0px;
-    border-bottom-left-radius: 0px; }
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0; }
     .btn__2:hover:before, .btn__2:hover:after {
       width: 100%;
       height: 100%; }
 
-.main__index {
-  margin-top: 100px;
-  margin-bottom: 100px; }
-  .main__index div h3 {
-    font-size: 1em;
-    font-weight: 400; }
-  .main__index div hr {
-    border: 1px solid #ee8f00;
-    width: 30px;
-    margin: 0px; }
-  .main__index section div a img:hover {
-    transform: scale(1.02); }
-  .main__index section div label {
-    font-size: 1em;
-    font-weight: 400; }
-  .main__index section div div span {
-    font-size: 0.8em;
-    font-weight: 400; }
+.main__index div h3 {
+  font-size: 2rem;
+  font-weight: 400; }
+
+.main__index div hr {
+  width: 3rem;
+  border: 0.1rem solid #ee8f00;
+  margin: 0; }
+
+.main__index section div a img:hover {
+  transform: scale(1.02); }
+
+.main__index section div label {
+  font-size: 2rem;
+  font-weight: 400; }
+
+.main__index section div div span {
+  font-size: 1.2rem;
+  font-weight: 400; }
 
 .body__trabajos {
   height: 700px;
@@ -248,7 +301,7 @@ a {
   background-repeat: no-repeat; }
 
 .header__trabajos div p {
-  font-size: 0.8em;
+  font-size: 1.2rem;
   font-weight: 400; }
 
 .main__trabajos {
@@ -273,7 +326,7 @@ a {
         z-index: 1; }
       .main__trabajos div div h2 {
         margin-top: 20px;
-        font-size: 0.8em;
+        font-size: 1.2rem;
         font-weight: 600; }
 
 .section__contacto {
@@ -288,7 +341,7 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 1em;
+    font-size: 2rem;
     font-weight: 600; }
 
 .main__contacto {
@@ -300,11 +353,11 @@ a {
     border-radius: 5px;
     text-align: center; }
     .main__contacto div form h1 {
-      font-size: 2em;
+      font-size: 2.5rem;
       font-weight: 700;
       margin-bottom: .5em; }
     .main__contacto div form p {
-      font-size: 1em;
+      font-size: 2rem;
       font-weight: 400; }
     .main__contacto div form section {
       margin-top: 3em;
@@ -316,7 +369,7 @@ a {
           width: 100%;
           color: #f5f0f0;
           background: none;
-          font-size: 0.8em;
+          font-size: 1.2rem;
           font-weight: 400;
           padding: .6em .3em;
           border: none;
@@ -326,7 +379,7 @@ a {
           .main__contacto div form section div input:not(:placeholder-shown) + label {
             transform: translateY(-12px) scale(0.7);
             transform-origin: left top;
-            font-size: 1em;
+            font-size: 2rem;
             font-weight: 600;
             color: #f5c67e; }
         .main__contacto div form section div label {
@@ -337,7 +390,7 @@ a {
           left: 5px;
           transform: translatey(10px);
           transition: transform .5s;
-          font-size: 0.8em;
+          font-size: 1.2rem;
           font-weight: 400; }
 
 .submit__contacto {
@@ -346,7 +399,7 @@ a {
   border-radius: .5em;
   padding: .8em 0;
   color: #f5f0f0;
-  font-size: 0.8em;
+  font-size: 1.2rem;
   font-weight: 400; }
   .submit__contacto:hover {
     background-color: #f5c67e;
@@ -356,27 +409,27 @@ a {
   margin-top: 8em;
   width: 59.8%; }
   .main__sobremi h2 {
-    font-size: 0.8em;
+    font-size: 1.2rem;
     font-weight: 600; }
   .main__sobremi h1 {
-    font-size: 2em;
+    font-size: 2.5rem;
     font-weight: 600;
     line-height: 1.3em; }
   .main__sobremi p {
-    font-size: 0.8em;
+    font-size: 1.2rem;
     font-weight: 400;
     line-height: 2em; }
 
 .main__blog h5 {
-  font-size: 2em;
+  font-size: 2.5rem;
   font-weight: 700; }
 
 .main__blog p {
-  font-size: 1em;
+  font-size: 2rem;
   font-weight: 300; }
 
 .main__blog span {
-  font-size: 0.8em;
+  font-size: 1.2rem;
   font-weight: 700; }
 
 .section__blog img {
@@ -385,19 +438,19 @@ a {
     border: solid 3px #f5c67e; }
 
 .section__blog h5 {
-  font-size: 1em;
+  font-size: 2rem;
   font-weight: 700; }
 
 .section__blog p {
-  font-size: 0.8em;
+  font-size: 1.2rem;
   font-weight: 400; }
 
 .section__blog span {
-  font-size: 0.8em;
+  font-size: 1.2rem;
   font-weight: 700; }
 
 .section__blog label {
-  font-size: 0.8em;
+  font-size: 1.2rem;
   font-weight: 300; }
 
 .article__blog div {
@@ -406,7 +459,7 @@ a {
     width: auto;
     height: auto; }
     .article__blog div div h3 {
-      font-size: 1em;
+      font-size: 2rem;
       font-weight: 700; }
     .article__blog div div hr {
       width: 10%;
@@ -418,11 +471,11 @@ a {
     outline: none; }
   .article__blog div ::placeholder {
     color: #000;
-    font-size: 0.8em;
+    font-size: 1.2rem;
     font-weight: 300; }
 
 .submit__blog {
-  font-size: 1em;
+  font-size: 2rem;
   font-weight: 400; }
   .submit__blog:hover {
     background-color: #f3ac41; }
@@ -431,9 +484,7 @@ a {
   margin: 0;
   padding: 0;
   font-family: "montserrat",sans-serif;
-  min-height: 100vh;
-  background-image: url(../img/hero__404.webp);
-  background-repeat: no-repeat; }
+  min-height: 100vh; }
 
 .main__404 h1 {
   font-size: 12em;
@@ -451,22 +502,19 @@ a {
     text-shadow: red -3px 0, cyan 2px 0; } }
 
 .main__404 h2 {
-  font-size: 1em;
+  font-size: 2.5rem;
   font-weight: 400; }
 
 .main__404 p {
-  font-size: 0.8em;
+  font-size: 2rem;
   font-weight: 400; }
 
 .main__404 button {
-  background-color: transparent;
-  border: 1px solid #ee8f00;
+  background-color: #ee8f00;
   padding: 8px 12px;
-  font-size: 0.8em;
-  font-weight: 600;
+  border: none;
+  font-size: 1.2rem;
+  font-weight: 400;
   border-radius: 4px; }
   .main__404 button:hover {
-    background-color: #ee8f00;
-    color: #ffffff;
-    font-size: 0.8em;
-    font-weight: 400; }
+    background-color: #f3ac41; }
