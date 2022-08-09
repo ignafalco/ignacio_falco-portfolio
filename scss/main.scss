@@ -15,17 +15,18 @@
                 @include texto($textXl, $semibold);
             }
             p{
-                @include texto($textSm, $light);
+                @include texto($textMd, $light);
+                margin-top: 2em;
             }
     }
 }     
 
 .btn__1{
     @include texto($textSm, $regular);
-    padding: 0.5em 1em;
+    padding: .5em 1em;
     background-color: #f3ac41;
     border: none;
-    border-radius: 2px;
+    border-radius: .2em;
     width: auto;
     &:hover{
         background-color: #f5c67e;
@@ -33,25 +34,26 @@
 }
 
 .section__index{
-    width: 100vw;
+    width: 99.95vw;
     div{
         h2{
             @include texto($textMd, $regular); 
         }
         hr{
-            border: 1px solid #ee8f00;
-            width: 30px;
-            margin: 0px;
+            border: .1rem solid #ee8f00;
+            width: 3rem;
+            margin: 0;
         }
         p{
-            @include texto($textSm, $regular);   
+            @include texto($textSm, $regular);
+            margin-top: 3.5em;   
         }
         ul{
-            margin-top: 40px;
+            margin-top: 4rem;
             padding: 0;
                 li{
                 @include texto($textMd, $regular); 
-                margin: 0 15px;
+                margin: 0 .7em;
                 list-style: none;
                 &:hover{
                     color: #f3ac41;
@@ -64,37 +66,37 @@
 
 .btn__2 {
     cursor:pointer;
-	position:relative;
+	position: relative;
     @include texto($textSm, $semibold);
-	padding:0.5em 1em;
-	transition:all 1s;
+	padding: 0.5em 1em;
+	transition: all 1s;
     border: none;
 	&:after,&:before{
 		content:" ";
-		width:1rem;
-		height:1rem;
-		position:absolute;
-		border :0 solid #fff;
-		transition:all 1s;
+		width: 1rem;
+		height: 1rem;
+		position: absolute;
+		border : 0 solid #fff;
+		transition: all 1s;
 		}
 	&:after{
-		top:0;
-		left:0;
-		border-top:0.2rem solid #f5c67e;
-		border-left:0.2rem solid #f5c67e;
+		top: 0;
+		left: 0;
+		border-top: 0.2rem solid #f5c67e;
+		border-left: 0.2rem solid #f5c67e;
 	}
 	&:before{
 		bottom:0;
 		right:0;
-		border-bottom:0.2rem solid #f5c67e;
-		border-right:0.2rem solid #f5c67e;
+		border-bottom: 0.2rem solid #f5c67e;
+		border-right: 0.2rem solid #f5c67e;
 	}
 	&:hover{
-		border-top-right-radius:0;
-	    border-bottom-left-radius:0;
+		border-top-right-radius: 0;
+	    border-bottom-left-radius: 0;
 		&:before,&:after{
-			width:100%;
-			height:100%;
+			width: 100%;
+			height: 100%;
 		}
 	}
 }
@@ -102,7 +104,8 @@
 .main__index{
     div{
         h3{
-            @include texto($textMd, $regular) 
+            @include texto($textMd, $regular);
+            margin-top: 3em;
         }
         hr{
             width: 3rem;
@@ -111,7 +114,9 @@
         }
     }
     section{
+            margin-top: 7em;
         div{
+            margin-bottom: 10em;
             a{
                 img{
                     &:hover{
@@ -119,12 +124,17 @@
                     }
                 }
             }
+            h4{
+                @include texto($textSm, $bold);
+                margin-top: 1em; 
+            }
             label{
-                @include texto($textMd, $regular)  
+                @include texto($textLg, $regular);
+                margin-top: .5em;  
             }
             div{
                 span{
-                    @include texto($textSm, $regular)  
+                    @include texto($textSm, $light); 
                 }
             }
         }
@@ -132,50 +142,66 @@
     
 }
 
-
-
-// Comienza trabajos
-.body__trabajos{
-    height: 700px;
-    background-image: url(../img/img__hero.webp);
-    background-repeat: no-repeat;
-}
-
-
-.header__trabajos{
-    div{
-        p{
-            @include texto($textSm, $regular);    
-        }
+.article__index{
+    h2{
+        @include texto($textMd, $semibold);   
+    }
+    p{
+        @include texto($textSm, $regular); 
+    }
+    hr{
+        margin-top: 20rem;
+        border-top: 1px solid;
+        width: 100%;
     }
 }
 
 
+
+// Comienza trabajos
+
+
+.header__trabajos{
+    div{
+        h1{
+            @include texto($textXl, $bold);
+        }  
+        }
+        span{
+            @include texto($textSm, $regular);  
+        }
+        a{
+            @include texto($textXl, $regular);
+        }
+}
+
+
+
 .main__trabajos{
-    margin-top: 100px;
-    padding-bottom: 100px;
     div{
         max-width: 1300px;
         margin: auto;
-        margin-top: 40px;      
+        margin-top: 4rem;      
         flex-wrap: wrap;
         div{
-            width: 218px;
-            height: 200px;
-            background: #f5f0f0;
-            margin: 1px;
+            width: 21.8rem;
+            height: 20rem;
+            margin: .1rem;
+            background-color: #ffffff;
             cursor: pointer;
             transition: all 300ms ease;
             &:hover{
-                transform: scale(1.1);
                 box-shadow: 0px 0px 30px -15px rgba(0,0,0,0.5);
                 background: #f5c67e;
                 z-index: 1;
             }
             h2{
-                margin-top: 20px;
+                margin-top: 2rem;
                 @include texto($textSm, $semibold); 
                 }
+            span{
+                font-size: 4rem;
+            }
         }
     }
 }
@@ -187,99 +213,27 @@
 
 // Comienza contacto
 
-.section__contacto{
-    height: 400px;
-    overflow: hidden;
-    margin-top: 1.4em;
-    position: relative;
-    video{
-        width: 100%;
-    }
-    p{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        @include texto($textMd, $semibold);
-    }
-}
-
-.main__contacto {
-    margin-top: 4em;
+.main__contacto{
+    margin-top: 10rem;
+    margin-bottom: 15rem;
     div{
-        form{
-            width: 100%;
-            max-width: 500px;
-            padding: 4.5em 3em;
-            border-radius: 5px;
-            text-align: center;
-            h1{
-                @include texto($textLg, $bold); 
-                margin-bottom: .5em;
-            }
-            p{
-                @include texto($textMd, $regular);  
-            }
-            section{
-                margin-top: 3em;
-                display: grid;
-                gap: 2.5em;
-                div{
-                    position: relative;
-                    input{
-                        width: 100%;
-                        color: #f5f0f0;
-                        background: none;
-                        @include texto($textSm, $regular);
-                        padding: .6em .3em;
-                        border: none;
-                        outline: none; 
-                        border-bottom: 1px solid #787878;
-                        &:focus + label,
-                        &:not(:placeholder-shown) + label{
-                            transform: translateY(-12px) scale(.7);
-                            transform-origin: left top;
-                            @include texto($textMd, $semibold);
-                            color: #f5c67e;
-                        }
-                    }
-                    label{
-                        color: #f5f0f0;
-                        cursor: pointer;
-                        position: absolute;
-                        top: 0;
-                        left: 5px;
-                        transform: translatey(10px);
-                        transition: transform .5s;
-                        @include texto($textSm, $regular);
-                    }           
+        h1{
+            a{
+                font-size: 1em;
+                &:hover{
+                    color: #f5c67e;
+                    text-decoration: underline solid #ee8f00;
                 }
             }
         }
-    }       
-}
-
-.submit__contacto{
-    background-color: #f3ac41;
-    border: none;
-    border-radius: .5em;
-    padding: .8em 0;
-    color: #f5f0f0;
-    @include texto($textSm, $regular); 
-    &:hover{
-        background-color: #f5c67e;
-        color: #000000;
     }
 }
-// Termina contacto
 
 
 // Comienzo sobre mi
 
 
 .main__sobremi {
-    margin-top: 8em;
-    width: 59.8%;
     h2{
         @include texto($textSm, $semibold);
     }
@@ -294,6 +248,14 @@
    
 }
 
+.section__aboutme{
+    div{
+        div{
+            width: 30rem;
+            height: 50rem;
+        }
+    }
+}
 
 // Termina sobre mi
 
@@ -332,32 +294,6 @@
     }
 }
 
-.article__blog {
-    div{
-        height: 10em;
-        div{
-            width: auto;
-            height: auto;
-            h3{
-                @include texto($textMd, $bold);
-            }
-            hr{
-                width: 10%;
-                height: 2px;
-                border-top: 2px solid #fff;
-            }
-        }
-        input{
-            width: 20em;
-            border: solid 0.04px #787878;
-            outline: none;
-        }
-        ::placeholder{
-            color: #000;
-            @include texto($textSm, $light)
-        }
-    }
-}
 
 .submit__blog{
     @include texto($textMd, $regular);
@@ -414,9 +350,9 @@
     }
     button{
         background-color: #ee8f00;
-        padding: 8px 12px;
-        border: none;
         @include texto($textSm, $regular);
+        padding: .8em 1.2em;
+        border: none;
         border-radius: 4px;
         &:hover{
             background-color: #f3ac41;

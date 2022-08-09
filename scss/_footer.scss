@@ -1,21 +1,33 @@
 .footer {
     padding-bottom: 10px;
+    div{
+        a{
+            text-decoration: none;
+            li{
+                list-style: none;
+                @include texto($textSm, $regular);
+                &:hover{
+                    color: #f5c67e;
+                }
+            }
+        }
+    }
     hr{
         border-top: .1em solid #787878;
         width: 100%;
     }
-    li{
-        list-style: none;
-        @include texto($textSm, $regular);
-        &:hover{
-            color: #f5c67e;
+    div{
+        ul{
+            a{
+                li{
+                    @include texto($textLg, $regular);
+                    margin: .5em;
+                    &:hover{
+                        color: #f5c67e;
+                    }
+                }
+            }
         }
-    }
-    p{
-        font-size: $textSm;
-    }
-    a{
-        text-decoration: none;
     }
 }
 
